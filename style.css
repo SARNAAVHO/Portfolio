@@ -5,7 +5,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  text-decoration: none;
+  text-decoration: none; 
   border: none;
   outline: none;
   scroll-behavior: smooth;
@@ -16,7 +16,7 @@
   --bg-color:#080808;
   --second-bg-color:#131313;
   --text-color:white;
-  --main-color:#00ffee;
+  --main-color:#dd3f37;
 }
 
 html{
@@ -147,10 +147,11 @@ span{
 }
 
 .home-content p{
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 500;
   line-height: 1.8;
   max-width: 1000px;
+  background: transparent;
 }
 
 .social-icons a{
@@ -238,50 +239,27 @@ span{
 
 @keyframes words {
   0%,
-  20% {
+  40% {
     content: "ML Enthusiast";
   }
-  21%,
-  40% {
-    content: "Web Designer";
-  }
   41%,
-  60% {
-    content: "Frontend Developer";
-  }
-  61%,
-  80% {
-    content: "Web Developer";
-  }
-  81%,
   100% {
-    content: "Software Tester";
+    content: "Frontend Developer";
   }
 }
 
 @keyframes typing {
-  10%,
-  15%,
-  30%,
   35%,
-  50%,
-  55%,
-  70%,
-  75%,
-  90%,
-  95% {
+  40%,
+  95%,
+  100% {
     width: 0;
   }
 
-  5%,
-  20%,
-  25%,
-  40%,
+  0%,
+  30%,
   45%,
-  60%,
-  65%,
-  80%,
-  85% {
+  90% {
     width: calc(100% + 8px);
   }
 }
@@ -293,7 +271,8 @@ span{
 
 .education{
   padding: 100px 15px;
-  background-color: var(--second-bg-color);
+  /* background-color: var(--second-bg-color); */
+  background: transparent;
 }
 
 .education h2{
@@ -398,24 +377,25 @@ span{
   border-radius: 5rem;
 }
 
-.skills{
-  background: var(--bg-color);
+.projects{
+  /* background: var(--bg-color); */
+  background: transparent;
   color: black;
 }
 
-.skills h2{
+.projects h2{
   margin-bottom: 3rem;
   color: white;
 }
 
-.skills-cont{
+.projects-cont{
   display: grid;
   grid-template-columns: repeat(2,1fr);
   align-items: center;
   gap: 2rem;
 }
 
-.skills-box{
+.projects-box{
   background-color: var(--main-color);
   height: 180px;
   border-radius: 2.5rem;
@@ -424,7 +404,7 @@ span{
   transition: 0.4s ease-in-out;
 }
 
-.skills-box:hover{
+.projects-box:hover{
   background: var(--second-bg-color);
   color: white;
   border: 5px solid var(--main-color);
@@ -432,7 +412,7 @@ span{
   box-shadow: 0 0 15px var(--main-color);
 }
 
-.skills-box .skills-info{
+.projects-box .projects-info{
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -442,13 +422,13 @@ span{
   padding: 2rem 3rem;
 }
 
-.skills-info h4{
+.projects-info h4{
   font-size: 2rem;
   font-weight: 800;
   line-height: 2;
 }
 
-.skills-info p{
+.projects-info p{
   font-size: 1.3rem;
   font-weight: 500;
   line-height: 1.7;
@@ -457,7 +437,8 @@ span{
 }
 
 .contact{
-  background-color: var(--bg-color);
+  /* background-color: var(--bg-color); */
+  background: transparent;
 }
 
 .contact h2{
@@ -563,7 +544,7 @@ span{
   html{
     font-size: 55%;
   }
-  .skills-cont{
+  .projects-cont{
     padding-bottom: 7rem;
     grid-template-columns: repeat(2,1fr);
     margin: 0 5rem;
@@ -645,10 +626,150 @@ span{
   .home-img img{
     width: 56vw;
   }
-  .skills h2{
+  .projects h2{
     margin-bottom: 3rem;
   }
-  .skills-cont{
+  .projects-cont{
     grid-template-columns: repeat(1,1fr);
   }
+}
+
+
+.cursor {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: fixed; /* Changed from relative to fixed */
+  top: 0;
+  left: 0;
+  pointer-events: none; /* Prevent cursor from interfering with clicks */
+  transition: all linear 0.1s;
+  mix-blend-mode: difference;
+  z-index: 9999; /* Ensure cursor is always on top */
+  transform: translate(-50%, -50%); /* Center the cursor on the mouse position */
+}
+
+/* Add this to your existing CSS - Update the body selector */
+
+body {
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(221, 63, 55, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(221, 63, 55, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.02) 0%, transparent 50%),
+    linear-gradient(135deg, #080808 0%, #0f0f0f 25%, #131313 50%, #0a0a0a 75%, #080808 100%);
+  
+  /* Alternative: Geometric pattern background */
+  /* 
+  background: 
+    linear-gradient(90deg, rgba(221, 63, 55, 0.05) 1px, transparent 1px),
+    linear-gradient(rgba(221, 63, 55, 0.05) 1px, transparent 1px),
+    radial-gradient(circle at 25% 25%, rgba(221, 63, 55, 0.1) 0%, transparent 50%),
+    #080808;
+  background-size: 40px 40px, 40px 40px, 200px 200px, 100% 100%;
+  */
+  
+  /* Alternative: Modern dot pattern */
+  /*
+  background: 
+    radial-gradient(circle, rgba(221, 63, 55, 0.1) 1px, transparent 1px),
+    linear-gradient(135deg, #080808 0%, #131313 100%);
+  background-size: 30px 30px, 100% 100%;
+  background-position: 0 0, 0 0;
+  */
+  
+  color: var(--text-color);
+  cursor: none;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Add animated background elements */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), 
+      rgba(221, 63, 55, 0.08) 0%, 
+      transparent 40%);
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Optional: Add floating particles effect */
+.bg-particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.particle {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: rgba(221, 63, 55, 0.3);
+  border-radius: 50%;
+  animation: float 20s infinite linear;
+}
+
+.particle:nth-child(1) { left: 10%; animation-delay: 0s; }
+.particle:nth-child(2) { left: 20%; animation-delay: 2s; }
+.particle:nth-child(3) { left: 30%; animation-delay: 4s; }
+.particle:nth-child(4) { left: 40%; animation-delay: 6s; }
+.particle:nth-child(5) { left: 50%; animation-delay: 8s; }
+.particle:nth-child(6) { left: 60%; animation-delay: 10s; }
+.particle:nth-child(7) { left: 70%; animation-delay: 12s; }
+.particle:nth-child(8) { left: 80%; animation-delay: 14s; }
+.particle:nth-child(9) { left: 90%; animation-delay: 16s; }
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh) scale(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) scale(1);
+    opacity: 0;
+  }
+}
+
+/* Enhanced glow effects for sections */
+.home, .education, .projects, .contact {
+  position: relative;
+  z-index: 2;
+}
+
+/* Add subtle glow to main sections */
+section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at center, rgba(221, 63, 55, 0.02) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 12% 10rem;
+  background: transparent; /* Make all sections transparent by default */
+  position: relative;
 }

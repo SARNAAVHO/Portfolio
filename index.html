@@ -8,7 +8,18 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+  <div class="bg-particles">
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+</div>
+  <div class="cursor"></div>
   <header class="header">
     <a href="#home" class="logo">Sarnaavho
       <span>Pal</span>
@@ -19,16 +30,22 @@
     <nav class="navbar">
       <a href="#home" class="active">Home</a>
       <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
   
   <section class="home" id="home">
     <div class="home-content">
-      <h1>Hi, It's <span>Sarnaavho</span></h1>
-      <h3 class="text-animation">I'm a <span></span></h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam numquam enim debitis necessitatibus exercitationem doloremque officiis quis nemo nihil, rerum repudiandae ullam, minima earum quod ad? Quos amet adipisci fugiat eius non laborum</p>
+      <h1>Hello, I'm <span>Sarnaavho</span></h1>
+      <h3 class="text-animation">I'm a
+        <span></span>
+      </h3>
+      <p> Final-year Bachelor of Technology student in Computer Science and Engineering (Artificial Intelligence & Machine Learning)
+ developing skills in machine learning and cloud computing. Gaining practical experience in building ML models and
+ currently involved in a cloud computing project focused on network performance optimization using Python, TensorFlow,
+ and AWS. Familiar with basic frontend development and committed to continuous learning through certifications and
+ hands-on projects.</p>
 
       <div class="social-icons">
         <a href="#"><i class='bx bxl-linkedin'></i></a>
@@ -41,10 +58,11 @@
         <a href="#" class="btn">Hire me</a>
         <a href="#contact" class="btn">Contact</a>
       </div>
+      
     </div>
-      <div class="home-img">
+      <!-- <div class="home-img">
         <img src="img.png" alt="">
-      </div>
+      </div> -->
 
     
   </section>
@@ -58,7 +76,7 @@
           <div class="timeline-date">2020</div>
           <div class="timeline-content">
             <h3>Secondary Education</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem velit tenetur repudiandae magnam hic similique illo voluptatem iure veniam commodi!</p>
+            <p>Completed my Secondary Education from Kendriya Vidyalaya Ordnance Factory Dum Dum with 91.2%</p>
           </div>
         
       </div>
@@ -67,7 +85,7 @@
           <div class="timeline-date">2022</div>
           <div class="timeline-content">
             <h3>Higher Secondary Education</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem velit tenetur repudiandae magnam hic similique illo voluptatem iure veniam commodi!</p>
+            <p>Completed my Higher Secondary Education from Kendriya Vidyalaya Ordnance Factory Dum Dum with 89%</p>
           </div>
         
       </div>
@@ -76,41 +94,41 @@
           <div class="timeline-date">2026</div>
           <div class="timeline-content">
             <h3>Graduation</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem velit tenetur repudiandae magnam hic similique illo voluptatem iure veniam commodi!</p>
+            <p>Currently pursuing B.Tech in Computer Science Engineering with specialization in AI & ML from IEM, Salt Lake, Kolkata. Batch 2022-2026</p>
           </div>
         
       </div>
     </div>
   </section>
 
-  <section class="skills" id="skills">
+  <section class="projects" id="projects">
     
-    <h2 class="heading">Skills</h2>
+    <h2 class="heading">Projects</h2>
 
-    <div class="skills-cont">
-      <div class="skills-box">
-        <div class="skills-info">
+    <div class="projects-cont">
+      <div class="projects-box">
+        <div class="projects-info">
           <h4>ML Enthusiast</h4>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, explicabo culpa ipsum doloremque corrupti enim cum minima ullam velit nam aliquam? Facilis molestias nihil atque amet in corrupti exercitationem quidem.</p>
         </div>
       </div>
 
-      <div class="skills-box">
-        <div class="skills-info">
+      <div class="projects-box">
+        <div class="projects-info">
           <h4>Frontend Developer</h4>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, explicabo culpa ipsum doloremque corrupti enim cum minima ullam velit nam aliquam? Facilis molestias nihil atque amet in corrupti exercitationem quidem.</p>
         </div>
       </div>
 
-      <div class="skills-box">
-        <div class="skills-info">
+      <div class="projects-box">
+        <div class="projects-info">
           <h4>Web Developer</h4>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, explicabo culpa ipsum doloremque corrupti enim cum minima ullam velit nam aliquam? Facilis molestias nihil atque amet in corrupti exercitationem quidem.</p>
         </div>
       </div>
 
-      <div class="skills-box">
-        <div class="skills-info">
+      <div class="projects-box">
+        <div class="projects-info">
           <h4>Software Tester</h4>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, explicabo culpa ipsum doloremque corrupti enim cum minima ullam velit nam aliquam? Facilis molestias nihil atque amet in corrupti exercitationem quidem.</p>
         </div>
@@ -155,13 +173,13 @@
         <a href="#">FAQ</a>
       </li>
       <li>
-        <a href="#">Skills</a>
+        <a href="#projects">Projects</a>
       </li>
       <li>
         <a href="#">About Me</a>
       </li>
       <li>
-        <a href="#">Contact</a>
+        <a href="#contact">Contact</a>
       </li>
     </ul>
 
@@ -170,7 +188,9 @@
     </p>
 
   </footer>
-
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="script.js"></script>
 </body>
 </html>
